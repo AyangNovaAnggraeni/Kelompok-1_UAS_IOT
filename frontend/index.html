@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Environmental Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>IoT Monitoring System</h1>
+            <p>Environmental Monitoring Dashboard</p>
+        </div>
+
+        <div class="connection">
+            <span id="status-indicator"></span>
+            <span id="connection-status">Connecting...</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sensor-grid">
+
+            <div class="sensor-card">
+                <h3>Temperature A</h3>
+                <div class="sensor-value">
+                    <span id="tempA">--</span>
+                    <small>°C</small>
+                </div>
+                <p>DHT22 Sensor A</p>
+            </div>
+
+            <div class="sensor-card">
+                <h3>Humidity A</h3>
+                <div class="sensor-value">
+                    <span id="humA">--</span>
+                    <small>%</small>
+                </div>
+                <p>DHT22 Sensor A</p>
+            </div>
+
+            <div class="sensor-card">
+                <h3>Temperature B</h3>
+                <div class="sensor-value">
+                    <span id="tempB">--</span>
+                    <small>°C</small>
+                </div>
+                <p>DHT22 Sensor B</p>
+            </div>
+
+            <div class="sensor-card">
+                <h3>Humidity B</h3>
+                <div class="sensor-value">
+                    <span id="humB">--</span>
+                    <small>%</small>
+                </div>
+                <p>DHT22 Sensor B</p>
+            </div>
+
+        </section>
+
+        <section class="chart-card">
+            <h2>Temperature Monitoring</h2>
+            <canvas id="temperatureChart"></canvas>
+        </section>
+
+        <section class="chart-card">
+            <h2>Humidity Monitoring</h2>
+            <canvas id="humidityChart"></canvas>
+        </section>
+
+        <footer>
+            Last update: <span id="last-update">No data received</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

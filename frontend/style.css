@@ -153,3 +153,36 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.export-btn {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.export-btn:hover {
+    background: #1e40af;
+}
+
+.export-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .header-actions {
+        flex-wrap: wrap;
+    }
+}

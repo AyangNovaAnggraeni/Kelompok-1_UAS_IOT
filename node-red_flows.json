@@ -1,0 +1,32 @@
+[
+    {
+        "id": "3e0dbc591aea0849",
+        "type": "sqlite",
+        "z": "d47681f5260d3e40",
+        "mydb": "8d76b151b8ad1604",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "c8f8cce028aead1e"
+            ]
+        ]
+    },
+    {
+        "id": "8d76b151b8ad1604",
+        "type": "sqlitedb",
+        "db": "C:\\Users\\Asus A1404\\.node-red\\sensor_history_fixed.db",
+        "mode": "RW"
+    },
+    {
+        "id": "111730b2ab9f266b",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-sqlite": "2.0.1"
+        }
+    }
+]

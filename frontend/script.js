@@ -165,3 +165,8 @@ socket.onmessage = (event) => {
     data.timestamp,
   ).toLocaleString("id-ID");
 };
+
+// Export data SQLite ke CSV
+document.getElementById("export-csv-btn").addEventListener("click", () => {
+  window.location.href = "http://localhost:1880/api/sensors/csv";
+});
